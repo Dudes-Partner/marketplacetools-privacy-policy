@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MarketplaceTools Privacy Policy</title>
+<meta name="description" content="Privacy Policy for the MarketplaceTools Chrome Extension.">
+<meta name="color-scheme" content="light dark">
+<meta name="referrer" content="no-referrer">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<!-- Bootstrap 5.3.3 (jsDelivr). SRI hash verified against the file jsDelivr serves for bootstrap@5.3.3. -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" referrerpolicy="no-referrer">
+<!-- Font Awesome Free 6.7.2 (cdnjs). SRI hash as published by cdnjs. -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<style>
+  /* ---------- MarketplaceTools brand on top of Bootstrap (light) ---------- */
+  :root {
+    --bs-body-color: #1c2636;
+    --bs-body-color-rgb: 28, 38, 54;
+    --bs-heading-color: #04193a;
+    --bs-emphasis-color: #04193a;
+    --bs-emphasis-color-rgb: 4, 25, 58;
+    --bs-secondary-color: #4b5870;
+    --bs-tertiary-bg: #f5f7fb;
+    --bs-tertiary-bg-rgb: 245, 247, 251;
+    --bs-border-color: #dde3ec;
+    --bs-primary: #035efd;
+    --bs-primary-rgb: 3, 94, 253;
+    --bs-primary-bg-subtle: #eef4ff;
+    --bs-primary-border-subtle: #c4d8ff;
+    --bs-primary-text-emphasis: #04193a;
+    --bs-link-color: #0350d4;
+    --bs-link-color-rgb: 3, 80, 212;
+    --bs-link-hover-color: #023a9e;
+    --bs-link-hover-color-rgb: 2, 58, 158;
+    --mt-brand: #035efd;
+    --mt-icon-bg: #eef4ff;
+    --mt-code-bg: #eef2f7;
+    --mt-focus: #035efd;
+    --mt-ph-bg: #fff3cd;
+    --mt-ph-text: #5c4100;
+    --mt-ph-border: #e7c766;
+  }
+
+  /* ---------- Dark: Bootstrap's own dark-mode variables, applied by system setting ---------- */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      /* Bootstrap 5.3.3 [data-bs-theme=dark] variables */
+      color-scheme:dark;
+      --bs-body-color:#dee2e6;
+      --bs-body-color-rgb:222,226,230;
+      --bs-body-bg:#212529;
+      --bs-body-bg-rgb:33,37,41;
+      --bs-emphasis-color:#fff;
+      --bs-emphasis-color-rgb:255,255,255;
+      --bs-secondary-color:rgba(222, 226, 230, 0.75);
+      --bs-secondary-color-rgb:222,226,230;
+      --bs-secondary-bg:#343a40;
+      --bs-secondary-bg-rgb:52,58,64;
+      --bs-tertiary-color:rgba(222, 226, 230, 0.5);
+      --bs-tertiary-color-rgb:222,226,230;
+      --bs-tertiary-bg:#2b3035;
+      --bs-tertiary-bg-rgb:43,48,53;
+      --bs-primary-text-emphasis:#6ea8fe;
+      --bs-secondary-text-emphasis:#a7acb1;
+      --bs-success-text-emphasis:#75b798;
+      --bs-info-text-emphasis:#6edff6;
+      --bs-warning-text-emphasis:#ffda6a;
+      --bs-danger-text-emphasis:#ea868f;
+      --bs-light-text-emphasis:#f8f9fa;
+      --bs-dark-text-emphasis:#dee2e6;
+      --bs-primary-bg-subtle:#031633;
+      --bs-secondary-bg-subtle:#161719;
+      --bs-success-bg-subtle:#051b11;
+      --bs-info-bg-subtle:#032830;
+      --bs-warning-bg-subtle:#332701;
+      --bs-danger-bg-subtle:#2c0b0e;
+      --bs-light-bg-subtle:#343a40;
+      --bs-dark-bg-subtle:#1a1d20;
+      --bs-primary-border-subtle:#084298;
+      --bs-secondary-border-subtle:#41464b;
+      --bs-success-border-subtle:#0f5132;
+      --bs-info-border-subtle:#087990;
+      --bs-warning-border-subtle:#997404;
+      --bs-danger-border-subtle:#842029;
+      --bs-light-border-subtle:#495057;
+      --bs-dark-border-subtle:#343a40;
+      --bs-heading-color:inherit;
+      --bs-link-color:#6ea8fe;
+      --bs-link-hover-color:#8bb9fe;
+      --bs-link-color-rgb:110,168,254;
+      --bs-link-hover-color-rgb:139,185,254;
+      --bs-code-color:#e685b5;
+      --bs-highlight-color:#dee2e6;
+      --bs-highlight-bg:#664d03;
+      --bs-border-color:#495057;
+      --bs-border-color-translucent:rgba(255, 255, 255, 0.15);
+      --bs-form-valid-color:#75b798;
+      --bs-form-valid-border-color:#75b798;
+      --bs-form-invalid-color:#ea868f;
+      --bs-form-invalid-border-color:#ea868f;
+      /* MarketplaceTools overrides */
+      --bs-body-bg: #0d1420;
+      --bs-body-bg-rgb: 13, 20, 32;
+      --bs-body-color: #d9e0ea;
+      --bs-body-color-rgb: 217, 224, 234;
+      --bs-heading-color: #f3f6fb;
+      --bs-emphasis-color: #f3f6fb;
+      --bs-emphasis-color-rgb: 243, 246, 251;
+      --bs-secondary-color: #a5b1c3;
+      --bs-secondary-bg: #1a2539;
+      --bs-secondary-bg-rgb: 26, 37, 57;
+      --bs-tertiary-bg: #131c2b;
+      --bs-tertiary-bg-rgb: 19, 28, 43;
+      --bs-border-color: #26334a;
+      --bs-primary: #5c95ff;
+      --bs-primary-rgb: 92, 149, 255;
+      --bs-primary-bg-subtle: #14233d;
+      --bs-primary-border-subtle: #2a4677;
+      --bs-primary-text-emphasis: #d6e4ff;
+      --bs-link-color: #8ab4ff;
+      --bs-link-color-rgb: 138, 180, 255;
+      --bs-link-hover-color: #b8d0ff;
+      --bs-link-hover-color-rgb: 184, 208, 255;
+      --mt-brand: #5c95ff;
+      --mt-icon-bg: #14233d;
+      --mt-code-bg: #1a2539;
+      --mt-focus: #8ab4ff;
+      --mt-ph-bg: #3b2f0b;
+      --mt-ph-text: #ffdf91;
+      --mt-ph-border: #7a6220;
+    }
+  }
+
+  /* ---------- Base ---------- */
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+  body { overflow-wrap: break-word; }
+  a { text-underline-offset: 0.18em; }
+  :focus-visible {
+    outline: 3px solid var(--mt-focus);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+  main:focus { outline: none; }
+  code {
+    color: inherit;
+    background: var(--mt-code-bg);
+    padding: 0.1em 0.35em;
+    border-radius: 4px;
+    overflow-wrap: anywhere;
+  }
+  .skip-link {
+    position: absolute;
+    left: 1rem;
+    top: 0.75rem;
+    z-index: 1100;
+    padding: 0.6rem 1rem;
+    background: var(--bs-body-bg);
+    border: 2px solid var(--mt-focus);
+    border-radius: 6px;
+    font-weight: 600;
+  }
+
+  /* ---------- Header ---------- */
+  .site-header .navbar-brand { color: var(--bs-heading-color); font-size: 1.05rem; }
+  .site-header .navbar-brand { white-space: normal; min-width: 0; overflow-wrap: break-word; }
+  /* Shrinks only when the name would not fit on one line (narrow screen + large font). */
+  .brand-name { font-size: min(1.05rem, 7.2vw); }
+  .header-link { overflow-wrap: anywhere; }
+  .brand-section { display: none; border-left: 1px solid var(--bs-border-color); }
+  /* em-based, so the label also hides when the visitor uses a larger browser font size */
+  @media (min-width: 36em) { .brand-section { display: inline; } }
+
+  /* ---------- Reading column ---------- */
+  .layout-container {
+    max-width: 70rem;
+    /* Side margins stop growing with the font size on narrow screens, leaving room for text. */
+    padding-left: clamp(12px, 5vw, 1rem);
+    padding-right: clamp(12px, 5vw, 1rem);
+  }
+  @media (max-width: 991.98px) {
+    .layout-container > .row { --bs-gutter-x: 0; }
+  }
+  .policy-column { max-width: 44rem; }
+  .policy-column { line-height: 1.7; }
+  @media (min-width: 992px) {
+    .policy-column { font-size: 1.0625rem; }
+  }
+  .policy-title { font-size: min(calc(1.5rem + 0.9vw), 9.5vw); letter-spacing: -0.02em; }
+  @media (min-width: 1200px) { .policy-title { font-size: 2.1rem; } }
+
+  /* ---------- Table of contents ---------- */
+  .toc-sticky {
+    top: 1.5rem;
+    max-height: calc(100vh - 3rem);
+    overflow-y: auto;
+    z-index: 1;
+  }
+  .toc-title { font-size: 0.8rem; letter-spacing: 0.06em; }
+  .toc-list .nav-link {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.35rem 0.6rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: var(--bs-secondary-color);
+    border-left: 2px solid var(--bs-border-color);
+  }
+  .toc-list .nav-link:hover {
+    color: var(--bs-heading-color);
+    border-left-color: var(--mt-brand);
+    background: var(--bs-tertiary-bg);
+  }
+  .toc-num { min-width: 1.4em; font-variant-numeric: tabular-nums; }
+  .toc-list .nav-link, .toc-compact .list-group-item a, .policy-meta { overflow-wrap: anywhere; }
+  .toc-compact summary { cursor: pointer; list-style-position: inside; }
+  .toc-compact:not([open]) > summary { border-bottom: 0; border-radius: var(--bs-card-inner-border-radius); }
+  .toc-compact summary:focus-visible { outline-offset: -3px; }
+  .toc-compact .list-group-item a {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    color: var(--bs-body-color);
+  }
+  .toc-compact .list-group-item a:hover { background: var(--bs-tertiary-bg); }
+
+  /* ---------- At a glance ---------- */
+  .glance-card { border-color: var(--bs-primary-border-subtle); }
+  .glance-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    width: min(2.25rem, 11vw);
+    height: min(2.25rem, 11vw);
+    border-radius: 0.6rem;
+    background: var(--mt-icon-bg);
+    color: var(--mt-brand);
+  }
+  .glance-card, .contact-card { --bs-card-spacer-x: min(1rem, 4.5vw); --bs-card-spacer-y: min(1rem, 4.5vw); }
+  .glance-card .card-body { font-size: 0.95rem; line-height: 1.55; gap: min(1rem, 4.5vw); }
+  .glance-card .card-body > div { min-width: 0; overflow-wrap: anywhere; }
+  /* Gutters never wider than the side margins; two columns from 48em (768px at the default font size,
+     later when the visitor uses a larger font). */
+  .glance-list { --bs-gutter-x: min(1rem, 5vw); --bs-gutter-y: 1rem; }
+  @media (min-width: 48em) { .glance-list > * { flex: 0 0 auto; width: 50%; } }
+  /* Only with very large fonts on narrow screens: icon above the text, so the text keeps its width. */
+  @media (max-width: 14em) { .glance-card .card-body, .policy-callout { flex-direction: column; } }
+
+  /* ---------- Policy sections ---------- */
+  .policy-section { scroll-margin-top: 1.25rem; }
+  .policy-section + .policy-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--bs-border-color);
+  }
+  .policy-section h2 { font-size: 1.35rem; font-weight: 650; letter-spacing: -0.01em; margin-bottom: 0.9rem; }
+  .policy-section h3 { font-size: 1.05rem; font-weight: 650; margin: 1.6rem 0 0.5rem; }
+  .sec-num { color: var(--mt-brand); margin-right: 0.15em; font-variant-numeric: tabular-nums; }
+  .policy-section ul { padding-left: 1.35rem; }
+  .policy-section li { margin-bottom: 0.35rem; }
+  .policy-callout { line-height: 1.6; --bs-alert-padding-x: min(1rem, 4.5vw); --bs-alert-padding-y: min(1rem, 4.5vw); }
+  .policy-callout p { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+
+  .policy-placeholder {
+    background: var(--mt-ph-bg);
+    color: var(--mt-ph-text);
+    border: 1px dashed var(--mt-ph-border);
+    border-radius: 4px;
+    padding: 0 0.3em;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+  }
+
+  /* ---------- Tables ---------- */
+  .policy-table { border: 1px solid var(--bs-border-color); border-radius: var(--bs-border-radius-lg); overflow-x: auto; }
+  .policy-table .table { font-size: 0.925rem; line-height: 1.55; }
+  .policy-table th { background: var(--bs-tertiary-bg); font-size: 0.85rem; }
+  .policy-table th, .policy-table td { padding: 0.7rem 0.85rem; overflow-wrap: break-word; }
+  .policy-table td + td, .policy-table th + th { border-left: 1px solid var(--bs-border-color); }
+  .policy-table tbody tr:last-child td { border-bottom: 0; }
+  /* em-based, so tables also stack when the visitor uses a larger browser font size */
+  @media (max-width: 39.99em) {
+    .stack table, .stack thead, .stack tbody, .stack tr, .stack th, .stack td { display: block; }
+    .stack thead {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+    .stack tr { border-bottom: 1px solid var(--bs-border-color); }
+    .stack tbody tr:last-child { border-bottom: 0; }
+    .stack td { border: 0 !important; padding: 0.35rem min(0.9rem, 4vw); }
+    .stack td:first-child { padding-top: 0.8rem; }
+    .stack td:last-child { padding-bottom: 0.8rem; }
+    .stack td::before {
+      content: attr(data-label);
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--bs-secondary-color);
+    }
+  }
+
+  /* ---------- Contact ---------- */
+  .contact-card address { font-style: normal; }
+  .contact-card dt {
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--bs-secondary-color);
+  }
+  .contact-card .fa-fw { color: var(--mt-brand); }
+  .contact-card .row { --bs-gutter-x: min(1.5rem, 6vw); }
+
+  /* ---------- Footer ---------- */
+  .site-footer a { display: inline-block; padding: 0.25rem 0; }
+  .site-footer p { min-width: 0; overflow-wrap: anywhere; }
+
+  /* ---------- Print ---------- */
+  @media print {
+    .skip-link, .toc-sidebar, .toc-compact-nav, .header-link, .site-footer a { display: none !important; }
+    .policy-column { max-width: none; }
+    a { color: inherit; }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link visually-hidden-focusable" href="#content">Skip to content</a>
+
+<header class="site-header navbar bg-body border-bottom py-2" id="top">
+  <div class="container-xl layout-container px-lg-4">
+    <div class="navbar-brand d-flex align-items-center gap-2 py-0 me-0 fw-bold">
+      <img src="assets/marketplacetools-icon.png" alt="" width="32" height="32" class="flex-shrink-0">
+      <span class="brand-name">Marketplace<wbr>Tools</span>
+      <span class="brand-section fw-normal fs-6 text-body-secondary ps-2 ms-1">Privacy Policy</span>
+    </div>
+    <a class="header-link fw-semibold py-2" href="#contact"><i class="fa-solid fa-envelope me-1" aria-hidden="true"></i>Privacy contact</a>
+  </div>
+</header>
+
+<div class="container-xl layout-container px-lg-4">
+  <div class="row gx-lg-5">
+    <aside class="toc-sidebar col-lg-3 d-none d-lg-block pt-5">
+      <nav class="toc-sticky sticky-top" aria-labelledby="toc-heading">
+        <p class="toc-title text-uppercase fw-bold text-body-secondary mb-2" id="toc-heading"><i class="fa-solid fa-list-ul me-2" aria-hidden="true"></i>On this page</p>
+        <ol class="nav flex-column toc-list">
+          <!-- BEGIN GENERATED from privacy-policy.md by tools/build-privacy-page.mjs: toc-sidebar -->
+          <li class="nav-item"><a class="nav-link" href="#introduction"><span class="toc-num">1</span>Introduction</a></li>
+          <li class="nav-item"><a class="nav-link" href="#information-accessed"><span class="toc-num">2</span>Information MarketplaceTools accesses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stored-locally"><span class="toc-num">3</span>Information stored on your device</a></li>
+          <li class="nav-item"><a class="nav-link" href="#account"><span class="toc-num">4</span>Account and authentication data</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cloud"><span class="toc-num">5</span>Cloud synchronization</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ai"><span class="toc-num">6</span>AI processing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#usage"><span class="toc-num">7</span>AI usage records</a></li>
+          <li class="nav-item"><a class="nav-link" href="#analytics"><span class="toc-num">8</span>Analytics, cookies and tracking</a></li>
+          <li class="nav-item"><a class="nav-link" href="#permissions"><span class="toc-num">9</span>Chrome permissions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#network"><span class="toc-num">10</span>Network requests</a></li>
+          <li class="nav-item"><a class="nav-link" href="#third-parties"><span class="toc-num">11</span>Third-party services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sharing"><span class="toc-num">12</span>Data sharing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#limited-use"><span class="toc-num">13</span>Limited Use</a></li>
+          <li class="nav-item"><a class="nav-link" href="#retention"><span class="toc-num">14</span>Data retention and deletion</a></li>
+          <li class="nav-item"><a class="nav-link" href="#security"><span class="toc-num">15</span>Data security</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rights"><span class="toc-num">16</span>Your choices and rights</a></li>
+          <li class="nav-item"><a class="nav-link" href="#children"><span class="toc-num">17</span>Children's privacy</a></li>
+          <li class="nav-item"><a class="nav-link" href="#international"><span class="toc-num">18</span>International data processing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#changes"><span class="toc-num">19</span>Changes to this policy</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact"><span class="toc-num">20</span>Contact</a></li>
+          <!-- END GENERATED: toc-sidebar -->
+        </ol>
+      </nav>
+    </aside>
+
+    <main id="content" class="col-lg-9 py-4 py-lg-5" tabindex="-1">
+      <div class="policy-column">
+        <div class="mb-4">
+          <h1 class="policy-title fw-bold mb-3">Marketplace<wbr>Tools Privacy Policy</h1>
+          <!-- BEGIN GENERATED from privacy-policy.md by tools/build-privacy-page.mjs: meta -->
+          <dl class="policy-meta small text-body-secondary d-flex flex-wrap column-gap-4 row-gap-1 mb-0">
+            <div><dt class="d-inline fw-semibold">Effective date:</dt> <dd class="d-inline mb-0"><time datetime="2026-11-25">November 25, 2026</time></dd></div>
+            <div><dt class="d-inline fw-semibold">Last updated:</dt> <dd class="d-inline mb-0"><time datetime="2026-11-25">November 25, 2026</time></dd></div>
+            <div><dt class="d-inline fw-semibold">Applies to:</dt> <dd class="d-inline mb-0">MarketplaceTools for Google Chrome</dd></div>
+          </dl>
+          <!-- END GENERATED: meta -->
+        </div>
+
+        <!-- BEGIN GENERATED from privacy-policy.md by tools/build-privacy-page.mjs: notice -->
+        <!-- END GENERATED: notice -->
+        <nav class="toc-compact-nav d-lg-none mb-4" aria-label="Table of contents">
+          <details class="toc-compact card">
+            <summary class="card-header fw-semibold py-2 px-3"><i class="fa-solid fa-list-ul me-2" aria-hidden="true"></i>Contents</summary>
+            <ol class="list-group list-group-flush">
+              <!-- BEGIN GENERATED from privacy-policy.md by tools/build-privacy-page.mjs: toc-compact -->
+              <li class="list-group-item p-0"><a href="#introduction"><span class="toc-num">1</span>Introduction</a></li>
+              <li class="list-group-item p-0"><a href="#information-accessed"><span class="toc-num">2</span>Information MarketplaceTools accesses</a></li>
+              <li class="list-group-item p-0"><a href="#stored-locally"><span class="toc-num">3</span>Information stored on your device</a></li>
+              <li class="list-group-item p-0"><a href="#account"><span class="toc-num">4</span>Account and authentication data</a></li>
+              <li class="list-group-item p-0"><a href="#cloud"><span class="toc-num">5</span>Cloud synchronization</a></li>
+              <li class="list-group-item p-0"><a href="#ai"><span class="toc-num">6</span>AI processing</a></li>
+              <li class="list-group-item p-0"><a href="#usage"><span class="toc-num">7</span>AI usage records</a></li>
+              <li class="list-group-item p-0"><a href="#analytics"><span class="toc-num">8</span>Analytics, cookies and tracking</a></li>
+              <li class="list-group-item p-0"><a href="#permissions"><span class="toc-num">9</span>Chrome permissions</a></li>
+              <li class="list-group-item p-0"><a href="#network"><span class="toc-num">10</span>Network requests</a></li>
+              <li class="list-group-item p-0"><a href="#third-parties"><span class="toc-num">11</span>Third-party services</a></li>
+              <li class="list-group-item p-0"><a href="#sharing"><span class="toc-num">12</span>Data sharing</a></li>
+              <li class="list-group-item p-0"><a href="#limited-use"><span class="toc-num">13</span>Limited Use</a></li>
+              <li class="list-group-item p-0"><a href="#retention"><span class="toc-num">14</span>Data retention and deletion</a></li>
+              <li class="list-group-item p-0"><a href="#security"><span class="toc-num">15</span>Data security</a></li>
+              <li class="list-group-item p-0"><a href="#rights"><span class="toc-num">16</span>Your choices and rights</a></li>
+              <li class="list-group-item p-0"><a href="#children"><span class="toc-num">17</span>Children's privacy</a></li>
+              <li class="list-group-item p-0"><a href="#international"><span class="toc-num">18</span>International data processing</a></li>
+              <li class="list-group-item p-0"><a href="#changes"><span class="toc-num">19</span>Changes to this policy</a></li>
+              <li class="list-group-item p-0"><a href="#contact"><span class="toc-num">20</span>Contact</a></li>
+              <!-- END GENERATED: toc-compact -->
+            </ol>
+          </details>
+        </nav>
+
+        <section class="mb-5" aria-labelledby="h-glance">
+          <h2 id="h-glance" class="h5 fw-bold mb-3">At a glance</h2>
+          <!-- BEGIN GENERATED from privacy-policy.md by tools/build-privacy-page.mjs: glance -->
+          <ul class="glance-list row row-cols-1 g-3 list-unstyled mb-0">
+            <li class="col"><div class="card glance-card h-100"><div class="card-body d-flex"><span class="glance-icon" aria-hidden="true"><i class="fa-solid fa-laptop"></i></span><div><strong class="d-block">Local-first analysis</strong> MarketplaceTools analyzes product listings locally in your browser. The analysis itself does not send listing data to us. <a href="#information-accessed">Section 2</a></div></div></div></li>
+            <li class="col"><div class="card glance-card h-100"><div class="card-body d-flex"><span class="glance-icon" aria-hidden="true"><i class="fa-solid fa-user-lock"></i></span><div><strong class="d-block">Secure account sign-in</strong> Sign-in is handled by our authentication provider, Supabase. We never store your password. <a href="#account">Section 4</a></div></div></div></li>
+            <li class="col"><div class="card glance-card h-100"><div class="card-body d-flex"><span class="glance-icon" aria-hidden="true"><i class="fa-solid fa-cloud-arrow-up"></i></span><div><strong class="d-block">Cloud synchronization</strong> When you are signed in, your target keywords and Action Plan progress can be synchronized to your account, per product. No listing text is uploaded. <a href="#cloud">Section 5</a></div></div></div></li>
+            <li class="col"><div class="card glance-card h-100"><div class="card-body d-flex"><span class="glance-icon" aria-hidden="true"><i class="fa-solid fa-wand-magic-sparkles"></i></span><div><strong class="d-block">AI only when requested</strong> Listing text is sent for AI processing only when you ask MarketplaceTools to generate improvements, and only the text sections that are needed. <a href="#ai">Section 6</a></div></div></div></li>
+            <li class="col"><div class="card glance-card h-100"><div class="card-body d-flex"><span class="glance-icon" aria-hidden="true"><i class="fa-solid fa-chart-simple"></i></span><div><strong class="d-block">Limited usage records</strong> For AI requests, we record the model, the amount of text processed and the outcome, not the listing content itself. <a href="#usage">Section 7</a></div></div></div></li>
+            <li class="col"><div class="card glance-card h-100"><div class="card-body d-flex"><span class="glance-icon" aria-hidden="true"><i class="fa-solid fa-rectangle-ad"></i></span><div><strong class="d-block">No sale or advertising use</strong> We do not sell user information or use it for advertising. <a href="#sharing">Section 12</a></div></div></div></li>
+          </ul>
+          <!-- END GENERATED: glance -->
+        </section>
+
+        <div class="policy">
+          <!-- BEGIN GENERATED from privacy-policy.md by tools/build-privacy-page.mjs: sections -->
+          <section class="policy-section" id="introduction" aria-labelledby="h-introduction">
+            <h2 id="h-introduction"><span class="sec-num">1.</span> Introduction</h2>
+            <p>MarketplaceTools is a Chrome extension that helps marketplace sellers analyze and improve their product listings. When you view a product page on a supported marketplace, MarketplaceTools reads the listing, checks it against listing-quality guidelines, and shows the results and improvement suggestions in Chrome's side panel. The currently supported marketplace is OTTO (otto.de). MarketplaceTools may support additional marketplaces in future releases.</p>
+            <p>MarketplaceTools is provided by Dudes6Partner - Willi Deubner ("we", "us", "our"). MarketplaceTools is an independent tool. It is not affiliated with, operated by or endorsed by OTTO or any other marketplace.</p>
+            <p>This policy explains what information MarketplaceTools handles, where that information is kept, who receives it, and what we do, and do not do, with it.</p>
+            <div class="alert alert-primary policy-callout d-flex gap-2">
+              <i class="fa-solid fa-circle-info mt-1" aria-hidden="true"></i>
+              <p><strong>In short:</strong> The listing analysis runs locally in your browser. If you sign in, we process your account data to provide account features, and your target keywords and Action Plan progress can be synchronized to your account. If you ask for AI suggestions, the listing text needed for them is sent through our server to our AI provider. Analytics and advertising trackers are not used, and we do not sell your data.</p>
+            </div>
+          </section>
+
+          <section class="policy-section" id="information-accessed" aria-labelledby="h-information-accessed">
+            <h2 id="h-information-accessed"><span class="sec-num">2.</span> Information MarketplaceTools accesses</h2>
+            <h3>Product pages on supported marketplaces</h3>
+            <p>MarketplaceTools works only on product pages of supported marketplaces, which is currently OTTO (otto.de). When you view a product page there, MarketplaceTools reads the listing information shown on that page:</p>
+            <ul>
+              <li>page address, product ID and variant ID</li>
+              <li>title, brand, category and breadcrumb navigation</li>
+              <li>current price and comparison (crossed-out) price</li>
+              <li>Bulletpoints, Besondere Merkmale and product description</li>
+              <li>image addresses and image descriptions (alt text), and the number of videos</li>
+              <li>average rating and number of reviews (not the review texts or reviewer names)</li>
+              <li>delivery information and availability</li>
+              <li>test seals and sustainability seals (labels and image addresses)</li>
+              <li>Rich Content text and image addresses</li>
+            </ul>
+            <p>MarketplaceTools uses this information to analyze the listing and to provide its features.</p>
+            <div class="alert alert-primary policy-callout d-flex gap-2">
+              <i class="fa-solid fa-circle-info mt-1" aria-hidden="true"></i>
+              <p>Reading and analyzing this information happens locally in your browser. It does not mean the information is sent anywhere. Only cloud synchronization (<a href="#cloud">section 5</a>) and AI suggestions (<a href="#ai">section 6</a>) send selected information, as described there.</p>
+            </div>
+            <p>MarketplaceTools does not read your marketplace account, login details, passwords, cookies or payment information, and it does not change marketplace pages.</p>
+            <h3>Other websites</h3>
+            <p>MarketplaceTools does not run on other websites and does not read their content. Chrome lets MarketplaceTools see the address of a browser tab only when that tab shows a supported marketplace; for other websites, it does not see the address at all (see <a href="#permissions">section 9</a>). MarketplaceTools does not collect your browsing history and does not keep a record of the websites you visit.</p>
+            <h3>Information you enter</h3>
+            <p>You can enter or add information yourself:</p>
+            <ul>
+              <li>target keywords for a product</li>
+              <li>your Action Plan progress (which recommendations you selected and marked as done)</li>
+              <li>competitor products you add, with your own notes and tags</li>
+              <li>search positions (rank tracking) that you record by hand or import from a CSV or JSON file you choose</li>
+              <li>your email address and password when you sign in (<a href="#account">section 4</a>)</li>
+            </ul>
+            <p>Files you import are read locally and are not uploaded.</p>
+          </section>
+
+          <section class="policy-section" id="stored-locally" aria-labelledby="h-stored-locally">
+            <h2 id="h-stored-locally"><span class="sec-num">3.</span> Information stored on your device</h2>
+            <p>MarketplaceTools saves your work in your browser's storage on your device, so it is still there when you close and reopen the side panel. This data is not synchronized through your Google account. Most of it stays only on your device; the table shows which information is also synchronized to your account (<a href="#cloud">section 5</a>).</p>
+            <div class="policy-table stack mb-4">
+              <table class="table align-top mb-0">
+                <thead>
+                  <tr><th scope="col">What is stored</th><th scope="col">Also synchronized to your account?</th><th scope="col">How long it stays on your device</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="What is stored"><strong>Analysis results and saved product workspace</strong> for each product you analyze (up to the 25 most recently used products): the analysis results (score, rule results and short facts such as "5 images", "24 characters", the delivery text, the rating and review count), the previous analysis for comparison, and view settings. Full listing texts and page HTML are not stored here.</td>
+                    <td data-label="Also synchronized to your account?">No</td>
+                    <td data-label="How long it stays on your device">Until you clear it or remove the extension. When you work on more than 25 products, the oldest workspace is removed automatically.</td>
+                  </tr>
+                  <tr>
+                    <td data-label="What is stored"><strong>Target keywords and Action Plan progress</strong> (selection and done marks), saved with the product workspace</td>
+                    <td data-label="Also synchronized to your account?">Yes, when you are signed in (<a href="#cloud">section 5</a>)</td>
+                    <td data-label="How long it stays on your device">Until you clear the workspace or remove the extension</td>
+                  </tr>
+                  <tr>
+                    <td data-label="What is stored"><strong>Competitor data</strong> you add: the competitor product's page address, product and variant ID and name, the listing information captured from its page (the same kinds of information listed in <a href="#information-accessed">section 2</a>; only the most recent capture is kept), and your notes and tags</td>
+                    <td data-label="Also synchronized to your account?">No</td>
+                    <td data-label="How long it stays on your device">Until you remove the competitor, clear the competitor data, or remove the extension</td>
+                  </tr>
+                  <tr>
+                    <td data-label="What is stored"><strong>Rank-tracking data</strong> you record: tracked products (page address, product ID, name), keywords and the search positions you entered or imported (up to 100 recent entries per keyword)</td>
+                    <td data-label="Also synchronized to your account?">No</td>
+                    <td data-label="How long it stays on your device">Until you remove the keyword, clear the rank data, or remove the extension</td>
+                  </tr>
+                  <tr>
+                    <td data-label="What is stored"><strong>Guided-tour settings</strong> (whether the tour is suggested and when it last ended)</td>
+                    <td data-label="Also synchronized to your account?">No</td>
+                    <td data-label="How long it stays on your device">Until you remove the extension</td>
+                  </tr>
+                  <tr>
+                    <td data-label="What is stored"><strong>Language preference</strong> (German or English), stored in the side panel's local storage</td>
+                    <td data-label="Also synchronized to your account?">No</td>
+                    <td data-label="How long it stays on your device">Until you change it, clear your browsing data, or remove the extension</td>
+                  </tr>
+                  <tr>
+                    <td data-label="What is stored"><strong>Scroll position</strong> of the side panel per browser tab, stored in the side panel's session storage</td>
+                    <td data-label="Also synchronized to your account?">No</td>
+                    <td data-label="How long it stays on your device">Deleted at the latest when you close the browser</td>
+                  </tr>
+                  <tr>
+                    <td data-label="What is stored"><strong>Sign-in session</strong>, while you are signed in: an access token, a refresh token, your user ID and email address</td>
+                    <td data-label="Also synchronized to your account?">No (issued and renewed by Supabase, <a href="#account">section 4</a>)</td>
+                    <td data-label="How long it stays on your device">Until you sign out or the session expires</td>
+                  </tr>
+                  <tr>
+                    <td data-label="What is stored"><strong>Synchronization status</strong>: which account this browser's saved workspaces belong to, and which changes are still to be uploaded</td>
+                    <td data-label="Also synchronized to your account?">No</td>
+                    <td data-label="How long it stays on your device">Until you clear all saved workspaces or remove the extension</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>Except for the language preference and the scroll position, this information is stored in Chrome extension storage (<code>chrome.storage.local</code>).</p>
+            <p>Some information is held only temporarily in memory while the extension is running and is never saved: the current page analysis, keyword-research results, AI suggestions (<a href="#ai">section 6</a>), the temporary session used while you reset your password (<a href="#account">section 4</a>), and the address of the supported marketplace page open in each tab.</p>
+          </section>
+
+          <section class="policy-section" id="account" aria-labelledby="h-account">
+            <h2 id="h-account"><span class="sec-num">4.</span> Account and authentication data</h2>
+            <p>You can use the listing analysis without an account. Signing in is needed for cloud synchronization and AI suggestions. Accounts are created by MarketplaceTools; you cannot sign up inside the extension.</p>
+            <p>When you sign in, the extension sends your <strong>email address and password</strong> to our authentication provider, <strong>Supabase</strong>, which checks them. MarketplaceTools does not store your password; Supabase stores only a protected (hashed) form of it. As part of providing its service, Supabase also processes technical information such as your IP address.</p>
+            <p>After you sign in, Supabase issues a <strong>session</strong>. The extension stores it in your browser's storage and renews it automatically, so you stay signed in after closing the side panel or restarting Chrome. If the session can no longer be renewed, you are signed out and asked to sign in again.</p>
+            <p><strong>Resetting your password:</strong> if you forget your password, you can ask for a recovery code on the sign-in form. Supabase sends the code to your email address. You enter the code and a new password in the extension, and Supabase stores the new password in protected (hashed) form. The temporary session used for the reset is kept only in memory and is not saved. After the reset, all sessions of your account are signed out, and you sign in again with the new password.</p>
+            <p><strong>Signing out</strong> ends the session in this browser and removes it from your browser's storage. Your local work stays on your device, and your synchronized data stays in your account.</p>
+            <p>For each account, we keep:</p>
+            <ul>
+              <li>the <strong>account record</strong> at Supabase: your email address, user ID, and when the account was created and last used</li>
+              <li>an <strong>access profile</strong>: your user ID, your access level, and when the profile was created and changed</li>
+            </ul>
+            <p>We use this information to sign you in and to decide which features your account may use. Access levels are set by MarketplaceTools.</p>
+          </section>
+
+          <section class="policy-section" id="cloud" aria-labelledby="h-cloud">
+            <h2 id="h-cloud"><span class="sec-num">5.</span> Cloud synchronization</h2>
+            <p>When you are signed in and your account has access to cloud synchronization, MarketplaceTools keeps a copy of part of your saved work in your account, so that you can use it on other devices. For each product that has a product ID, only the following is stored:</p>
+            <ul>
+              <li>the marketplace and the marketplace's product ID</li>
+              <li>your target keywords, and whether they were checked</li>
+              <li>your Action Plan selection and the recommendations you marked as done (with the time you marked them)</li>
+              <li>when you last changed this data</li>
+            </ul>
+            <p><strong>Not synchronized:</strong> listing texts (title, Bulletpoints, Besondere Merkmale, description, Rich Content), prices, images and image addresses, page addresses, analysis results, view settings, competitor data and rank-tracking data. These stay on your device.</p>
+            <p>The synchronized copy is stored with Supabase and linked to your user ID. Database rules ensure that each account can access only its own synchronized data, and only while the account has access.</p>
+            <p>Your browser's copy is the working copy:</p>
+            <ul>
+              <li>Changes are uploaded shortly after you make them.</li>
+              <li>The synchronized copy is downloaded when you open a product.</li>
+              <li>If the same product was changed on two devices, the most recent change is kept.</li>
+              <li>The first account that synchronizes in a browser is linked to that browser's saved workspaces. If another account signs in on the same browser, those workspaces are not uploaded to it or downloaded from it.</li>
+            </ul>
+            <p><strong>Deleting synchronized data:</strong> if you clear a saved workspace while signed in, its synchronized copy is deleted as well. A deletion marker is kept so that your other devices also remove the workspace. It contains only the marketplace, the product ID and the time of deletion, not your keywords or Action Plan.</p>
+          </section>
+
+          <section class="policy-section" id="ai" aria-labelledby="h-ai">
+            <h2 id="h-ai"><span class="sec-num">6.</span> AI processing</h2>
+            <p>MarketplaceTools can suggest improved listing text using an AI model. This happens <strong>only when you explicitly request it</strong>: you must be signed in, your account must have access, and you must ask MarketplaceTools to generate suggestions.</p>
+            <p>When you request an AI-generated improvement, the extension sends the following to the <strong>MarketplaceTools server</strong>, together with your sign-in token:</p>
+            <ul>
+              <li>the listing's title, Bulletpoints, Besondere Merkmale and description</li>
+              <li>Rich Content teaser headline, teaser text and footnote</li>
+              <li>brand, category and breadcrumb navigation</li>
+              <li>your target keywords, with their status and priority</li>
+              <li>which sections should be improved, the improvement goals, length limits and the language</li>
+              <li>a random request number, used to match the answer to the request</li>
+            </ul>
+            <p><strong>Not sent:</strong> the page address, product and variant ID, prices, images and image addresses, rating, review count, delivery information, availability, number of videos, seals, Rich Content images and highlight blocks.</p>
+            <p>The MarketplaceTools server checks your sign-in and access level and applies usage limits (<a href="#usage">section 7</a>). It then sends the listing information and keywords to our AI provider, <strong>Anthropic</strong> (Claude), to generate the suggestions. Anthropic does not receive your email address, user ID, sign-in token or IP address from us. Anthropic processes this information to provide the service, according to the applicable service agreement and its privacy terms. The extension never contacts Anthropic directly.</p>
+            <p>The suggestions are returned through the MarketplaceTools server to your browser. Our server does not store the listing text, the request sent to Anthropic, or the suggestions. In the extension, the suggestions are kept only in memory while the side panel is open. You decide whether to copy them; you can also save them as a file on your device.</p>
+          </section>
+
+          <section class="policy-section" id="usage" aria-labelledby="h-usage">
+            <h2 id="h-usage"><span class="sec-num">7.</span> AI usage records</h2>
+            <p>For each AI request, the MarketplaceTools server records:</p>
+            <ul>
+              <li>your user ID</li>
+              <li>the time of the request</li>
+              <li>the AI model used</li>
+              <li>the amount of text processed (input and output tokens)</li>
+              <li>the outcome (for example: success, timeout, or no usable result)</li>
+            </ul>
+            <p>The server stores these records in our database at Supabase, in an area that the extension and user accounts cannot access.</p>
+            <p>These records contain <strong>no</strong> listing text, keywords, prompts, AI suggestions, email address or IP address. We use them to apply fair-use limits per minute and per day, and to manage costs. Our server's error logs record only the type of event (for example "rate limited"), not user IDs or content.</p>
+            <p>Retention periods for these records are determined by MarketplaceTools' operational requirements and applicable legal obligations.</p>
+          </section>
+
+          <section class="policy-section" id="analytics" aria-labelledby="h-analytics">
+            <h2 id="h-analytics"><span class="sec-num">8.</span> Analytics, cookies and tracking</h2>
+            <p>MarketplaceTools does not use analytics, telemetry, crash reporting, advertising trackers, advertising identifiers or any other tracking tools. The extension does not set cookies.</p>
+          </section>
+
+          <section class="policy-section" id="permissions" aria-labelledby="h-permissions">
+            <h2 id="h-permissions"><span class="sec-num">9.</span> Chrome permissions</h2>
+            <p>When you install MarketplaceTools, Chrome asks for the following permissions. Chrome's warnings describe what a permission <em>could</em> allow; this table explains what MarketplaceTools actually does.</p>
+            <div class="policy-table stack mb-4">
+              <table class="table align-top mb-0">
+                <thead>
+                  <tr><th scope="col">Permission</th><th scope="col">Why MarketplaceTools needs it</th><th scope="col">What MarketplaceTools does with it</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Permission"><strong>Access to supported marketplaces</strong> (<code>https://www.otto.de/*</code>, <code>https://otto.de/*</code>)</td>
+                    <td data-label="Why MarketplaceTools needs it">To read the product page you view. Chrome describes this as being able to "read and change" your data on these sites.</td>
+                    <td data-label="What MarketplaceTools does with it">Reads the product information listed in <a href="#information-accessed">section 2</a> and processes it locally. This access also lets MarketplaceTools see the address of tabs that show a supported marketplace, so the side panel can show the analysis for the page you are looking at. It does not change marketplace pages and does not run on any other website.</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Permission"><strong><code>storage</code></strong></td>
+                    <td data-label="Why MarketplaceTools needs it">To save your work and your sign-in session on your device (see <a href="#stored-locally">section 3</a>).</td>
+                    <td data-label="What MarketplaceTools does with it">Stores your workspaces, competitor data, rank-tracking data, settings and sign-in session locally. Nothing is synchronized through your Google account.</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Permission"><strong><code>sidePanel</code></strong></td>
+                    <td data-label="Why MarketplaceTools needs it">To show the MarketplaceTools interface in Chrome's side panel next to the product page.</td>
+                    <td data-label="What MarketplaceTools does with it">Displays the analysis and tools.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>MarketplaceTools does not request Chrome's <code>tabs</code>, browsing history, cookies, bookmarks, downloads or location permissions, and it does not load code from the internet; all of its code is part of the installed extension. Sign-in, cloud synchronization and AI suggestions do not need any additional Chrome permission.</p>
+            <p>When support for another marketplace is added, Chrome will ask for access to that marketplace's website, and we will update this policy.</p>
+          </section>
+
+          <section class="policy-section" id="network" aria-labelledby="h-network">
+            <h2 id="h-network"><span class="sec-num">10.</span> Network requests</h2>
+            <h3>Listing analysis</h3>
+            <p>MarketplaceTools does not send listing data to us for the analysis. To show the product's main image in the side panel, your browser loads it directly from the marketplace's servers (currently OTTO), the same image you see on the product page. As with any image your browser loads, the marketplace receives the usual technical information (such as your IP address) with that request.</p>
+            <h3>Sign-in and cloud synchronization</h3>
+            <p>When you sign in, the extension connects to Supabase to sign you in and to renew your session. If you reset your password, it connects to Supabase to request the recovery code and to set the new password. While you are signed in, it also connects to Supabase to upload and download the synchronized data described in <a href="#cloud">section 5</a>.</p>
+            <h3>AI suggestions</h3>
+            <p>Only when you request AI suggestions, the extension connects to the MarketplaceTools server, which connects to Anthropic as described in <a href="#ai">section 6</a>. The extension never connects to Anthropic directly.</p>
+            <p>All of these connections are encrypted (HTTPS). Without signing in, MarketplaceTools sends no data to us, to Supabase or to Anthropic.</p>
+            <h3>This privacy-policy web page</h3>
+            <p>The web page that shows this policy loads its layout styles (Bootstrap) from cdn.jsdelivr.net and its icons (Font Awesome) from cdnjs.cloudflare.com. When you open the page, your browser connects to those servers, which receive the usual technical information such as your IP address. The page itself sets no cookies and uses no analytics. This concerns only the web page, not the MarketplaceTools extension.</p>
+          </section>
+
+          <section class="policy-section" id="third-parties" aria-labelledby="h-third-parties">
+            <h2 id="h-third-parties"><span class="sec-num">11.</span> Third-party services</h2>
+            <div class="policy-table stack mb-4">
+              <table class="table align-top mb-0">
+                <thead>
+                  <tr><th scope="col">Service</th><th scope="col">Role</th><th scope="col">When it is used</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Service"><strong>Supabase</strong></td>
+                    <td data-label="Role">Authentication and the database for accounts and cloud synchronization, acting on our behalf. Receives your email address, the password check, your session, user ID and access level, and the synchronized data described in <a href="#cloud">section 5</a>. Sends password-recovery codes by email. Also stores the AI usage records described in <a href="#usage">section 7</a>.</td>
+                    <td data-label="When it is used">When you sign in, while you are signed in, when you reset your password, and when you request AI suggestions</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Service"><strong>MarketplaceTools server</strong></td>
+                    <td data-label="Role">Our server, operated with a hosting provider acting on our behalf. Processes the AI request described in <a href="#ai">section 6</a>, applies usage limits and writes the usage records described in <a href="#usage">section 7</a>. As with any server connection, the hosting provider processes technical connection data such as your IP address.</td>
+                    <td data-label="When it is used">When you request AI suggestions</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Service"><strong>Anthropic</strong></td>
+                    <td data-label="Role">AI model provider (Claude), acting on our behalf. Receives the listing text sections and keywords described in <a href="#ai">section 6</a>.</td>
+                    <td data-label="When it is used">When you request AI suggestions</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Service"><strong>OTTO (otto.de)</strong></td>
+                    <td data-label="Role">The marketplace whose product pages MarketplaceTools reads. The product image shown in the side panel is loaded from OTTO's servers. We do not share any data with OTTO, and OTTO is not a partner of MarketplaceTools.</td>
+                    <td data-label="When it is used">When you analyze an OTTO product page</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Service"><strong>Google Chrome Web Store</strong></td>
+                    <td data-label="Role">Distributes the extension. Installing and updating extensions is handled by Google under Google's own privacy policy.</td>
+                    <td data-label="When it is used">Installation and updates</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="policy-section" id="sharing" aria-labelledby="h-sharing">
+            <h2 id="h-sharing"><span class="sec-num">12.</span> Data sharing</h2>
+            <ul>
+              <li><strong>Listing analysis:</strong> runs in your browser. No listing content is sent to us.</li>
+              <li><strong>Cloud synchronization:</strong> only the selected workspace information described in <a href="#cloud">section 5</a> is stored in your account.</li>
+              <li><strong>AI suggestions:</strong> only the listing content described in <a href="#ai">section 6</a> is sent, and only when you request AI suggestions.</li>
+              <li><strong>Usage records:</strong> limited information about each AI request is recorded to manage AI usage (<a href="#usage">section 7</a>).</li>
+            </ul>
+            <p>We share information only with the service providers listed in <a href="#third-parties">section 11</a>, and only as needed to provide MarketplaceTools. We do not:</p>
+            <ul>
+              <li>sell or rent personal information or other user data</li>
+              <li>share user data for advertising</li>
+              <li>show targeted advertising</li>
+              <li>track you across websites</li>
+              <li>use advertising cookies</li>
+              <li>collect your browsing history</li>
+              <li>use data to determine creditworthiness or for lending</li>
+            </ul>
+            <p>If you contact us (see <a href="#contact">section 20</a>), we use your message only to answer your request.</p>
+          </section>
+
+          <section class="policy-section" id="limited-use" aria-labelledby="h-limited-use">
+            <h2 id="h-limited-use"><span class="sec-num">13.</span> Limited Use</h2>
+            <p>MarketplaceTools' use of information it handles, including the marketplace website content it reads, complies with the Chrome Web Store User Data Policy, including the Limited Use requirements. MarketplaceTools uses this information only to provide the features described in this policy: analyzing product listings, synchronizing your keywords and Action Plan, and generating listing suggestions when you request them. It transfers information only to the service providers named in <a href="#third-parties">section 11</a>, and only to provide these features. It does not use the information for advertising or to determine creditworthiness or for lending purposes. Our server does not store your listing text, so no one at MarketplaceTools reads it.</p>
+          </section>
+
+          <section class="policy-section" id="retention" aria-labelledby="h-retention">
+            <h2 id="h-retention"><span class="sec-num">14.</span> Data retention and deletion</h2>
+            <p><strong>Data on your device</strong> stays there until you delete it or remove the extension.</p>
+            <p><strong>Delete it in MarketplaceTools.</strong> Under <strong>More</strong> (German: <strong lang="de">Mehr</strong>), you can delete your saved data at any time. It is removed from your browser's storage straight away.</p>
+            <ul>
+              <li><strong>Saved workspace</strong> → <strong>Clear saved workspace</strong> (one product) or <strong>Clear all saved OTTO workspaces</strong> (German: <em lang="de">Gespeicherten Arbeitsstand löschen</em> / <em lang="de">Alle gespeicherten OTTO-Arbeitsstände löschen</em>)</li>
+              <li><strong>Competitor Intelligence</strong> → <strong>Remove</strong> (one competitor) or <strong>Clear Competitor Data</strong> (German: <em lang="de">Entfernen</em> / <em lang="de">Wettbewerber-Daten löschen</em>)</li>
+              <li><strong>Rank Tracking</strong> → <strong>Remove</strong> (one keyword, with its recorded positions) or <strong>Clear Rank Data</strong> (German: <em lang="de">Entfernen</em> / <em lang="de">Ranking-Daten löschen</em>)</li>
+            </ul>
+            <p><strong>Remove the extension.</strong> When you remove MarketplaceTools from Chrome (for example on the <code>chrome://extensions</code> page), Chrome deletes all data that MarketplaceTools stored in your browser. This includes the guided-tour and language settings, which cannot be deleted separately inside the extension.</p>
+            <p><strong>Clearing Chrome's browsing data</strong> (history, cache, cookies) does <strong>not</strong> delete your saved MarketplaceTools work. It may reset the language setting.</p>
+            <p><strong>Sign-in session:</strong> signing out removes your session from your browser.</p>
+            <p><strong>Synchronized data:</strong> clearing a saved workspace while signed in also deletes its synchronized copy (<a href="#cloud">section 5</a>). Synchronized data is otherwise kept as long as your account exists. Deletion markers are kept so that your other devices also remove deleted workspaces.</p>
+            <p><strong>Account data:</strong> you may request deletion of your MarketplaceTools account and the associated cloud data by contacting us using the privacy contact in <a href="#contact">section 20</a>.</p>
+            <p><strong>AI usage records:</strong> these records are deleted when your account is deleted. Otherwise, retention periods for these records are determined by MarketplaceTools' operational requirements and applicable legal obligations. You can contact us about these records (<a href="#rights">section 16</a>).</p>
+            <p><strong>AI requests and suggestions</strong> are not stored on our server.</p>
+            <p><strong>Messages you send us</strong> are kept only as long as needed to handle your request and to meet legal retention obligations.</p>
+          </section>
+
+          <section class="policy-section" id="security" aria-labelledby="h-security">
+            <h2 id="h-security"><span class="sec-num">15.</span> Data security</h2>
+            <ul>
+              <li>Data used only for the local analysis stays in your browser and is not transmitted.</li>
+              <li>The extension's storage is restricted to the extension's own pages, and the part of the extension that runs on marketplace pages does not read or write it.</li>
+              <li>The extension loads no code from the internet, and imported files are processed locally.</li>
+              <li>Connections to Supabase and to the MarketplaceTools server are encrypted (HTTPS).</li>
+              <li>Database rules allow each account to access only its own synchronized data.</li>
+              <li>Our server accepts AI requests only from the MarketplaceTools extension and only with a valid sign-in from an account with access, and it applies usage limits. Provider credentials, such as the AI provider's key, are kept on our server, never in the extension.</li>
+            </ul>
+            <p>Data saved in your browser is protected by your device and your Chrome profile. Anyone with access to your computer and Chrome profile may be able to see it. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.</p>
+          </section>
+
+          <section class="policy-section" id="rights" aria-labelledby="h-rights">
+            <h2 id="h-rights"><span class="sec-num">16.</span> Your choices and rights</h2>
+            <ul>
+              <li>You can use the listing analysis without an account.</li>
+              <li>You decide whether to sign in and whether to request AI suggestions.</li>
+              <li>You can delete your local data, sign out, and clear synchronized workspaces at any time (<a href="#retention">section 14</a>).</li>
+              <li>You can remove the extension at any time, which deletes its local data.</li>
+            </ul>
+            <p>If data protection law such as the EU General Data Protection Regulation (GDPR) applies, you have the right to request access to, correction of, or deletion of your personal data, to request restriction of processing, to object to processing, and to data portability, where the legal requirements are met. These rights apply to your account data, your synchronized data and your AI usage records. You also have the right to lodge a complaint with a data protection supervisory authority. To make a request, contact us (<a href="#contact">section 20</a>).</p>
+            <p>Data used only for the local analysis stays in your browser, so we do not hold it.</p>
+          </section>
+
+          <section class="policy-section" id="children" aria-labelledby="h-children">
+            <h2 id="h-children"><span class="sec-num">17.</span> Children's privacy</h2>
+            <p>MarketplaceTools is a tool for business and professional marketplace sellers. It is not directed at children, and we do not knowingly collect information from children.</p>
+          </section>
+
+          <section class="policy-section" id="international" aria-labelledby="h-international">
+            <h2 id="h-international"><span class="sec-num">18.</span> International data processing</h2>
+            <p>When you sign in, use cloud synchronization or request AI suggestions, some of our service providers may process information outside the European Union or the European Economic Area. Anthropic, for example, is based in the United States. Where this happens, we take the steps required by applicable data protection law to protect your information.</p>
+          </section>
+
+          <section class="policy-section" id="changes" aria-labelledby="h-changes">
+            <h2 id="h-changes"><span class="sec-num">19.</span> Changes to this policy</h2>
+            <p>We may update this policy as MarketplaceTools changes, for example when we add features or support for another marketplace. Whenever a version of MarketplaceTools materially changes how it handles information, for example what information it collects, what is sent off your device, to whom or why, we will update this policy before that version is released. The "Last updated" date at the top shows when this policy last changed.</p>
+          </section>
+
+          <section class="policy-section" id="contact" aria-labelledby="h-contact">
+            <h2 id="h-contact"><span class="sec-num">20.</span> Contact</h2>
+            <p>For privacy questions or requests, please contact:</p>
+            <div class="card contact-card mt-2">
+              <div class="card-body">
+                <address class="mb-0">
+                  <dl class="row gy-2 mb-0">
+                    <dt class="col-sm-4 col-md-3 fw-bold"><i class="fa-solid fa-building fa-fw me-2" aria-hidden="true"></i>Company</dt>
+                    <dd class="col-sm-8 col-md-9 mb-0">Dudes6Partner - Willi Deubner</dd>
+                    <dt class="col-sm-4 col-md-3 fw-bold"><i class="fa-solid fa-location-dot fa-fw me-2" aria-hidden="true"></i>Postal address</dt>
+                    <dd class="col-sm-8 col-md-9 mb-0">Hauptmarkt 6, 99867 Gotha, Germany</dd>
+                    <dt class="col-sm-4 col-md-3 fw-bold"><i class="fa-solid fa-envelope fa-fw me-2" aria-hidden="true"></i>Email</dt>
+                    <dd class="col-sm-8 col-md-9 mb-0"><a href="mailto:info@dudes-partner.com">info@dudes-partner.com</a></dd>
+                    <dt class="col-sm-4 col-md-3 fw-bold"><i class="fa-solid fa-globe fa-fw me-2" aria-hidden="true"></i>Website</dt>
+                    <dd class="col-sm-8 col-md-9 mb-0"><a href="https://dudes-partner.com" rel="noopener">https://dudes-partner.com</a></dd>
+                  </dl>
+                </address>
+              </div>
+            </div>
+            <p>We have not appointed a data protection officer. Please send privacy questions and requests to the email address above.</p>
+          </section>
+          <!-- END GENERATED: sections -->
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<footer class="site-footer border-top bg-body-tertiary mt-4">
+  <div class="container-xl layout-container px-lg-4 py-4 small text-body-secondary">
+    <div class="d-flex flex-wrap justify-content-between column-gap-4 row-gap-2">
+      <p class="mb-0">MarketplaceTools · Privacy Policy · Last updated <time datetime="2026-11-25">November 25, 2026</time></p>
+      <p class="mb-0"><a href="#contact"><i class="fa-solid fa-envelope me-1" aria-hidden="true"></i>Privacy contact</a> · <a href="#top"><i class="fa-solid fa-arrow-up me-1" aria-hidden="true"></i>Back to top</a></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
